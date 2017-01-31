@@ -6,6 +6,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { WorkoutsPage } from'../pages/workouts/workouts';
 import {AddWorkoutPage } from '../pages/add-workout/add-workout';
 import {WorkoutService} from './services/workout.service';
+import {DetailsPage} from '../pages/details/details';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import {WorkoutService} from './services/workout.service';
     AboutPage,
     TabsPage,
     AddWorkoutPage,
-    WorkoutsPage
+    WorkoutsPage,
+    DetailsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -24,7 +26,8 @@ import {WorkoutService} from './services/workout.service';
     AboutPage,
     TabsPage,
     WorkoutsPage,
-    AddWorkoutPage
+    AddWorkoutPage,
+    DetailsPage
       ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, WorkoutService]
 })
